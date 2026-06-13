@@ -1,80 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <head>
-      <!-- other tags -->
-      <style>
-        .custom-bg {
-          background-color: #263238; /* replace with your preferred color */
-        }
-        .custom-text {
-          color: #8EBBD1; /* replace with your preferred color */
-        }
-        .outline-row {
-           border: 1px solid #5A7685; /* replace with your preferred color */
-        }
-      </style>
-    </head>
-
-    <title>Om Ohm Productions - Chris Roberts</title>
-  </head>
-  <body class="custom-bg custom-text">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          Instructions for installing on macOS
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-            &nbsp
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-            Since the application is not signed (I don’t want to pay the $99/yr) you will have to do a manual step in the console to allow it to run.
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-            &nbsp
-        </div>
-      </div>
-      <div class="col text-left">
-        <a href="latest/macos/SquidManager_1_3_macos.zip"><h5>Download v1.3 for macOS</h5></a>
-      </div>
-      <div class="row">
-        <div class="col-12">
-            &nbsp
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-            <ol>
-            <li>Download SquidManager_osx.zip, the app will be automatically extracted during download</li>
-            <li>Use the following command to allow it to run</li>
-            <li><b>xattr -d com.apple.quarantine ~/Downloads/SquidManager.app</b></li>
-            <li>You can now run it. You can move it to the Applications folder if you do desire</li>
-            </ol>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <img src="images/squidmanager_V1_3_macos.jpg" class="img-fluid" alt="Image 2">
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SquidManager macOS Download</title>
+  <meta name="theme-color" content="#101214" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap hdr">
+      <a class="logo" href="../index.html" aria-label="Om Ohm home">
+        <span class="logo-badge"><img src="../images/omohm-logo.png" alt="" class="logo-mark" /></span>
+        <span class="wm">OM <span class="amber">OHM</span></span>
+      </a>
+      <nav>
+        <a href="index.html">SquidManager</a>
+        <a href="../index.html#products">Products</a>
+      </nav>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+  </header>
+
+  <main>
+    <section class="wrap product-hero">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">SquidManager</a> / macOS</p>
+      <div class="eyebrow">Install on macOS</div>
+      <h1>SquidManager for <span class="amber">macOS</span></h1>
+      <p class="subtitle">Since the application is not signed (I don't want to pay the $99/yr) you will need a manual step in the console to allow it to run.</p>
+      <div class="ctas" style="margin-top:28px">
+        <a class="btn btn-amber" href="latest/macos/SquidManager_1_3_macos.zip">Download v1.3 for macOS</a>
+        <a class="btn btn-ghost" href="index.html">← Back to SquidManager</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="card">
+          <ol class="install-steps">
+            <li>Download SquidManager_osx.zip — the app will be automatically extracted during download</li>
+            <li>Use the following command to allow it to run:<code class="cmd">xattr -d com.apple.quarantine ~/Downloads/SquidManager.app</code></li>
+            <li>You can now run it. You can move it to the Applications folder if you desire.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <a class="shot" href="images/squidmanager_V1_3_macos.jpg">
+          <img src="images/squidmanager_V1_3_macos.jpg" alt="SquidManager macOS screenshot" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© Chris Roberts — Om Ohm Productions</span>
+      <a href="index.html">SquidManager</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img src="" alt="" />
+  </div>
+  <script src="../js/site.js"></script>
+</body>
 </html>

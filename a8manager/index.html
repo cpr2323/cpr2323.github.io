@@ -1,204 +1,198 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <head>
-      <!-- other tags -->
-      <style>
-        .custom-bg {
-          background-color: #263238; /* replace with your preferred color */
-        }
-        .custom-text {
-          color: #8EBBD1; /* replace with your preferred color */
-        }
-        .outline-row {
-           border: 1px solid #5A7685; /* replace with your preferred color */
-        }
-        .green-text {
-          color: #139729
-        }
-        .notice-text {
-          color: #569787
-        }
-      </style>
-    </head>
-
-    <title>Om Ohm Productions - Chris Roberts</title>
-  </head>
-  <body class="custom-bg custom-text">
-    <div class="container">
-      <!-- Titles -->
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h3>A8 Manager</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h6>Editor for Rossum Electro-Music <a href="https://www.rossum-electro.com/products/assimil8or/">Assimil8or</a></h6>
-        </div>
-      </div>
-      <!-- Downaload links -->
-      <div class="row">
-        <div class="col text-right">
-          <a href="latest/windows/A8Manager_2_6_2_win.zip"><h5>Windows</h5></a>
-        </div>
-        <div class="col-auto text-center"><h5><p class="green-text"><- Download (<i>v2.6.2</i>) -></p></h5></div>
-        <div class="col text-left">
-          <a href="macos_download.html"><h5>macOS</h5></a>
-        </div>
-      </div>
-      <!-- Images -->
-      <div class="row">
-        <div class="col-5">
-          <a href="images/a8manager_v2_6_2_win.jpg"><img src="images/a8manager_v2_6_2_win.jpg" class="img-fluid" alt="Windows screenshot"></a>
-        </div>
-        <div class="col-2 d-flex align-items-center">
-          <div class="d-flex flex-column align-items-center">
-            <a href="https://www.paypal.com/donate/?hosted_button_id=7YEVN3U2P9FS4"><img src="images/btn_donate_LG.gif" class="img-fluid" alt="Donate Button"></a>
-            <p></p>
-            <p></p>
-            <img src="images/Assimil8or.jpg" class="img-fluid mb-3" alt="Assimil8or Module">
-            <a href="https://youtu.be/_IfHcD-m6uc">Quick Overview Video</a>
-            <a href="https://discord.gg/XWbttngfCw">Discord Server</a>
-          </div>
-        </div>
-        <div class="col-5">
-          <a href="images/a8manager_v2_6_2_macos.jpg"><img src="images/a8manager_v2_6_2_macos.jpg" class="img-fluid" alt="macOS screenshot"></a>
-        </div>
-      </div>
-      <!-- Description  -->
-      <div class="row mt-3">
-        <div class="col">
-          <p>A8Manager is a Preset Editor for the Rossum Electro-Music Assimil8or, an 8 channel sampler for Eurorack.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-        </div>
-        <div class="col">
-          <ul>
-            <li>Open source and cross platform (Windows and macOS)</li>
-            <li>Edit Presets from SD Card</li>
-            <li>Drag and drop multiple samples</li>
-            <li>Audition raw samples to adjust loop points</li>
-            <li>Validate file system contents and offer fixes for common problems (file name length, valid file name characters, etc)</li>
-            <li class="notice-text"><i>v2.6.2 - Fixed a bug in reading Presets which were created by third party apps which did not exactly match the format the module creates</i></li>
-            <li class="notice-text"><i>v2.6.1 - Updated for Assimil8or FW 3.03 and fixed a serious bug</i></li>
-            <ul>
-              <li class="notice-text"><i>New FW: Extended MIDI Pitch Bend range from +/- 12 to +/- 48</i></li>
-              <li class="notice-text"><i>New FW: Updated Midi Setups Editor with addition of "Indexed KZ" to Multi Mode Assigns and new numerical parameter Index Base Key</i></li>
-              <li class="notice-text"><i>Fixed serious bug introduced in v2.5, where a value from a parameter text edit field would not actually update if you clicked away from that parameter</i></li>
-            </ul>
-            <li class="notice-text"><i>v2.6 - Added new feature to the Preset TOOLS menu, Import/Export of Settings and Samples</i></li>
-            <li class="notice-text"><i>v2.5.1 - Fixed bug that could cause sample/loop source selection to not work</i></li>
-            <li class="notice-text"><i>v2.5 - New features and bug fixes</i></li>
-            <ul>
-              <li class="notice-text"><i>Auto convert audio files that are not wav files. (Drag and drop, File Chooser, and Validator)</i></li>
-              <li class="notice-text"><i>Midi Setups Editor</i></li>
-              <li class="notice-text"><i>Enable Save button as soon as an edit is done on the Preset name</i></li>
-              <li class="notice-text"><i>Allow drag n drop on File View</i></li>
-              <li class="notice-text"><i>Properly give focus to edit field in the New Folder and Rename dialogs</i></li>
-              <li class="notice-text"><i>Added 'Delete' option for wav files in the File View</i></li>
-              <li class="notice-text"><i>Added 'Rename' option for wav files in the File View</i></li>
-              <li class="notice-text"><i>Added file/folder name to top of Popup Menus in File View</i></li>
-              <li class="notice-text"><i>Implemented Stereo -> mono mix and Stereo -> dual mono seperation from the FileView</i></li>
-              <li class="notice-text"><i>Updated double click on a wav file in the File View, to highlight the name and show "- Loading <samplename>" to indicate that something happned</i></li>
-              <li class="notice-text"><i>Removed preset and other system files from the File View. Since you could not do anything with those files from the view, they were just cluttering things.</i></li>
-              <li class="notice-text"><i>Add 'remove unused samples from preset folder' feature</i></li>
-              <li class="notice-text"><i>Updated File View to only show Folders and Wav files</i></li>
-              <li class="notice-text"><i>Added Move Up and Move Down to the Preset Browser popup menu, allows basic reording</i></li>
-              <li class="notice-text"><i>Text is selected in a field when the field is first selected</i></li>
-              <li class="notice-text"><i>Add mousewheel support for scrolling numerical text editors and comboboxes</i></li>
-              <li class="notice-text"><i>Add Explode to Channel TOOLS menu </i></li>
-              <li class="notice-text"><i>Add 'zero' line into loop tuner</i></li>
-              <li class="notice-text"><i>Make waveform display marker handles bigger</i></li>
-              <li class="notice-text"><i>Add Zero Crossing loop point align</i></li>
-              <li class="notice-text"><i>Display proper error message in Zone drop target when files won't be dropped</i></li>
-              <li class="notice-text"><i>Make active zone more obvious by increasing the contract between active and inactive tabs</i></li>
-              <li class="notice-text"><i>Make active sample/loop section more obvious in Zone Editor by adding a bounding box.</i></li>
-              <li class="notice-text"><i>Reworked sample point selection. Removed SOURCE buttons, and instead select appropriate source with any of the start/end editors or labels are clicked.</i></li>
-              <li class="notice-text"><i>Moved Play buttons on top of Loop Tuner</i></li>
-              <li class="notice-text"><i>Add Explode to Zone TOOLS menu </i></li>
-              <li class="notice-text"><i>Add Flip to Zone TOOLS menu </i></li>
-              <li class="notice-text"><i>Fixed Preset Tool tip when not showing all Presets (number indicates position in list, not preset number)</i></li>
-              <li class="notice-text"><i>Fixed bug with Preset List position jumping when using PopupMenu</i></li>
-              <li class="notice-text"><i>Fixed bug where right-click would also select the row</i></li>
-              <li class="notice-text"><i>Fixed bug where loading a sample into a zone that already had a sample can cause the start/end loop/end to go out of bounds</i></li>
-              <li class="notice-text"><i>Fix Zone Insert Bug (zone voltage was not set correctly)</i></li>                            
-            </ul>
-            <li class="notice-text"><i>v2.4.6 - Bug fix</i></li>
-            <ul>
-              <li class="notice-text"><i>Fixed bug where the Phase Mod Source for Left/Right Inputs were swapped</i></li>
-            </ul>
-            <li class="notice-text"><i>v2.4.5 - Bug fixes and a few new things</i></li>
-            <ul>
-              <li class="notice-text"><i>Fixed bug due to misundertanding of 'Side' Parameter</i></li>
-              <li class="notice-text"><i>Implmented missing feature to select left or right channel of stereo WAV file</i></li>
-              <li class="notice-text"><i>Fixed bug for stereo file playback, if right channel was not from the same sample as left channel</i></li>
-              <li class="notice-text"><i>Improved mono playback by playing into both channels</i></li>
-              <li class="notice-text"><i>Fixed bug where Loop End would not display correctly when Preset first loaded</i></li>
-            </ul>
-            <li class="notice-text"><i>v2.4.4 - Bug fixes and a few new things</i></li>
-            <ul>
-              <li class="notice-text"><i>Fixed incorrect Preset Id bug when pasting Preset in the Preset Browser</i></li>
-              <li class="notice-text"><i>Fixed bug when deleting Preset in the Preset Browser, Editor was not cleared</i></li>
-              <li class="notice-text"><i>Added Default and Revert to the Preset TOOLS Menu</i></li>
-              <li class="notice-text"><i>Updated dialog text informing that you will loose your edits if you don't save</i></li>
-            </ul>
-            <li class="notice-text"><i>v2.4.3 - Bug fix where converting stereo audio files were being converted to mono</i></li>
-            <li class="notice-text"><i>v2.4.2 - Bug fix for crash when dragging more than 8 samples into a Zone</i></li>
-            <li class="notice-text"><i>v2.4.1 - Editor updates and other cool stuff</i></li>
-            <ul>
-              <li class="notice-text"><i>Ctrl-drag for slider type value change</i></li>
-              <li class="notice-text"><i>Right-click edit menu per control</i></li>
-              <ul>
-                <li class="notice-text"><i>Clone</i></li>
-                <li class="notice-text"><i>Default (set parameter to default)</i></li>
-                <li class="notice-text"><i>Revert (set parameter to unedited value)</i></li>
-              </ul>
-              <li class="notice-text"><i>Full waveform view with moveable markers</i></li>
-              <li class="notice-text"><i>Copy/paste zone without changing the sample (TOOLS menu for Zones)</i></li>
-              <li class="notice-text"><i>Import/Export Presets (TOOLS menu for preset)</i></li>
-              <li class="notice-text"><i>Clone whole Channel and whole Zone (TOOLS menu for Channel)</i></li>
-              <li class="notice-text"><i>Clone all Zone Voltages to another Channel (TOOLS menu for Channel)</i></li>
-              <li class="notice-text"><i>Added missing Tool Tips</i></li>
-              <li class="notice-text"><i>Minor UI updates</i></li>
-              <li class="notice-text"><i>Fixed bug that left Envelope edit handle active when mouse left editor</i></li>
-              <li class="notice-text"><i>Fixed bug where SAVE button was highlighted, even if Preset data had been reset to the unedited values</i></li>
-              <li class="notice-text"><i>Fixed bug where Attack and Release were not actually updated if modified with the Graphic Editor</i></li>
-                          </ul>
-          </ul>
-        </div>
-        <div class="col-1">
-        </div>
-      </div>
-      <!-- Other links  -->
-      <div class="row mt-3 outline-row">
-        <div class="col-3">
-          <a href="https://www.paypal.com/donate/?hosted_button_id=7YEVN3U2P9FS4">Donate to Development</a>
-        </div>
-        <div class="col">
-          <a href="https://youtu.be/_IfHcD-m6uc">Quick Tutorial Video</a>
-        </div>
-        <div class="col">
-          <a href="https://github.com/cpr2323/A8Manager">Github Repository</a>
-        </div>
-        <div class="col">
-          <a href="https://github.com/cpr2323/A8Manager/issues">Github Issue List</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A8Manager — Editor for Rossum Assimil8or</title>
+  <meta name="description" content="A8Manager is a preset editor for the Rossum Electro-Music Assimil8or Eurorack sampler." />
+  <meta name="theme-color" content="#101214" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap hdr">
+      <a class="logo" href="../index.html" aria-label="Om Ohm home">
+        <span class="logo-badge"><img src="../images/omohm-logo.png" alt="" class="logo-mark" /></span>
+        <span class="wm">OM <span class="amber">OHM</span></span>
+      </a>
+      <nav>
+        <a href="../index.html#products">Products</a>
+        <a href="https://discord.gg/XWbttngfCw">Discord</a>
+        <a href="https://github.com/cpr2323/A8Manager">GitHub</a>
+      </nav>
+      <div class="hdr-cta">
+        <a class="btn btn-amber" href="latest/windows/A8Manager_2_6_2_win.zip">Download</a>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+  </header>
+
+  <main>
+    <section class="wrap product-hero">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / A8Manager</p>
+      <div class="eyebrow">Editor for Assimil8or</div>
+      <h1>A8<span class="amber">Manager</span></h1>
+      <p class="subtitle">Preset editor for the <a href="https://www.rossum-electro.com/products/assimil8or/">Rossum Electro-Music Assimil8or</a> — an 8 channel sampler for Eurorack.</p>
+      <div class="download-bar">
+        <a class="btn btn-ghost" href="latest/windows/A8Manager_2_6_2_win.zip">Windows</a>
+        <span class="version">v2.6.2</span>
+        <a class="btn btn-ghost" href="macos_download.html">macOS</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap screenshots">
+        <a class="shot" href="images/a8manager_v2_6_2_win.jpg">
+          <img src="images/a8manager_v2_6_2_win.jpg" alt="A8Manager Windows screenshot" />
+        </a>
+        <div class="shot-center">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=7YEVN3U2P9FS4" class="btn btn-amber">Donate</a>
+          <img class="module-img" src="images/Assimil8or.jpg" alt="Assimil8or module" />
+          <a href="https://youtu.be/_IfHcD-m6uc">Quick Overview Video</a>
+          <a href="https://discord.gg/XWbttngfCw">Discord Server</a>
+        </div>
+        <a class="shot" href="images/a8manager_v2_6_2_macos.jpg">
+          <img src="images/a8manager_v2_6_2_macos.jpg" alt="A8Manager macOS screenshot" />
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="eyebrow h2row">What's inside</div>
+        <h2>Preset editing from your <span class="amber">SD card</span></h2>
+        <p class="sub">A8Manager is a Preset Editor for the Rossum Electro-Music Assimil8or, an 8 channel sampler for Eurorack.</p>
+        <ul class="feature-list">
+          <li>Open source and cross platform (Windows and macOS)</li>
+          <li>Edit Presets from SD Card</li>
+          <li>Drag and drop multiple samples</li>
+          <li>Audition raw samples to adjust loop points</li>
+          <li>Validate file system contents and offer fixes for common problems (file name length, valid file name characters, etc)</li>
+        </ul>
+
+        <details style="margin-top:28px">
+          <summary>Release history</summary>
+          <div class="inner">
+            <ul class="feature-list">
+              <li class="notice">v2.6.2 — Fixed a bug in reading Presets which were created by third party apps which did not exactly match the format the module creates</li>
+              <li class="notice">v2.6.1 — Updated for Assimil8or FW 3.03 and fixed a serious bug
+                <ul>
+                  <li class="notice">New FW: Extended MIDI Pitch Bend range from +/- 12 to +/- 48</li>
+                  <li class="notice">New FW: Updated Midi Setups Editor with addition of "Indexed KZ" to Multi Mode Assigns and new numerical parameter Index Base Key</li>
+                  <li class="notice">Fixed serious bug introduced in v2.5, where a value from a parameter text edit field would not actually update if you clicked away from that parameter</li>
+                </ul>
+              </li>
+              <li class="notice">v2.6 — Added new feature to the Preset TOOLS menu, Import/Export of Settings and Samples</li>
+              <li class="notice">v2.5.1 — Fixed bug that could cause sample/loop source selection to not work</li>
+              <li class="notice">v2.5 — New features and bug fixes
+                <ul>
+                  <li class="notice">Auto convert audio files that are not wav files. (Drag and drop, File Chooser, and Validator)</li>
+                  <li class="notice">Midi Setups Editor</li>
+                  <li class="notice">Enable Save button as soon as an edit is done on the Preset name</li>
+                  <li class="notice">Allow drag n drop on File View</li>
+                  <li class="notice">Properly give focus to edit field in the New Folder and Rename dialogs</li>
+                  <li class="notice">Added 'Delete' option for wav files in the File View</li>
+                  <li class="notice">Added 'Rename' option for wav files in the File View</li>
+                  <li class="notice">Added file/folder name to top of Popup Menus in File View</li>
+                  <li class="notice">Implemented Stereo → mono mix and Stereo → dual mono separation from the FileView</li>
+                  <li class="notice">Updated double click on a wav file in the File View, to highlight the name and show "- Loading &lt;samplename&gt;" to indicate that something happened</li>
+                  <li class="notice">Removed preset and other system files from the File View</li>
+                  <li class="notice">Add 'remove unused samples from preset folder' feature</li>
+                  <li class="notice">Updated File View to only show Folders and Wav files</li>
+                  <li class="notice">Added Move Up and Move Down to the Preset Browser popup menu</li>
+                  <li class="notice">Text is selected in a field when the field is first selected</li>
+                  <li class="notice">Add mousewheel support for scrolling numerical text editors and comboboxes</li>
+                  <li class="notice">Add Explode to Channel TOOLS menu</li>
+                  <li class="notice">Add 'zero' line into loop tuner</li>
+                  <li class="notice">Make waveform display marker handles bigger</li>
+                  <li class="notice">Add Zero Crossing loop point align</li>
+                  <li class="notice">Display proper error message in Zone drop target when files won't be dropped</li>
+                  <li class="notice">Make active zone more obvious by increasing the contrast between active and inactive tabs</li>
+                  <li class="notice">Make active sample/loop section more obvious in Zone Editor by adding a bounding box</li>
+                  <li class="notice">Reworked sample point selection — removed SOURCE buttons</li>
+                  <li class="notice">Moved Play buttons on top of Loop Tuner</li>
+                  <li class="notice">Add Explode to Zone TOOLS menu</li>
+                  <li class="notice">Add Flip to Zone TOOLS menu</li>
+                  <li class="notice">Fixed Preset Tool tip when not showing all Presets</li>
+                  <li class="notice">Fixed bug with Preset List position jumping when using PopupMenu</li>
+                  <li class="notice">Fixed bug where right-click would also select the row</li>
+                  <li class="notice">Fixed bug where loading a sample into a zone that already had a sample can cause the start/end loop/end to go out of bounds</li>
+                  <li class="notice">Fix Zone Insert Bug (zone voltage was not set correctly)</li>
+                </ul>
+              </li>
+              <li class="notice">v2.4.6 — Bug fix
+                <ul>
+                  <li class="notice">Fixed bug where the Phase Mod Source for Left/Right Inputs were swapped</li>
+                </ul>
+              </li>
+              <li class="notice">v2.4.5 — Bug fixes and a few new things
+                <ul>
+                  <li class="notice">Fixed bug due to misunderstanding of 'Side' Parameter</li>
+                  <li class="notice">Implemented missing feature to select left or right channel of stereo WAV file</li>
+                  <li class="notice">Fixed bug for stereo file playback, if right channel was not from the same sample as left channel</li>
+                  <li class="notice">Improved mono playback by playing into both channels</li>
+                  <li class="notice">Fixed bug where Loop End would not display correctly when Preset first loaded</li>
+                </ul>
+              </li>
+              <li class="notice">v2.4.4 — Bug fixes and a few new things
+                <ul>
+                  <li class="notice">Fixed incorrect Preset Id bug when pasting Preset in the Preset Browser</li>
+                  <li class="notice">Fixed bug when deleting Preset in the Preset Browser, Editor was not cleared</li>
+                  <li class="notice">Added Default and Revert to the Preset TOOLS Menu</li>
+                  <li class="notice">Updated dialog text informing that you will lose your edits if you don't save</li>
+                </ul>
+              </li>
+              <li class="notice">v2.4.3 — Bug fix where converting stereo audio files were being converted to mono</li>
+              <li class="notice">v2.4.2 — Bug fix for crash when dragging more than 8 samples into a Zone</li>
+              <li class="notice">v2.4.1 — Editor updates and other cool stuff
+                <ul>
+                  <li class="notice">Ctrl-drag for slider type value change</li>
+                  <li class="notice">Right-click edit menu per control (Clone, Default, Revert)</li>
+                  <li class="notice">Full waveform view with moveable markers</li>
+                  <li class="notice">Copy/paste zone without changing the sample</li>
+                  <li class="notice">Import/Export Presets</li>
+                  <li class="notice">Clone whole Channel and whole Zone</li>
+                  <li class="notice">Clone all Zone Voltages to another Channel</li>
+                  <li class="notice">Added missing Tool Tips</li>
+                  <li class="notice">Minor UI updates</li>
+                  <li class="notice">Fixed bug that left Envelope edit handle active when mouse left editor</li>
+                  <li class="notice">Fixed bug where SAVE button was highlighted, even if Preset data had been reset to the unedited values</li>
+                  <li class="notice">Fixed bug where Attack and Release were not actually updated if modified with the Graphic Editor</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="eyebrow h2row">Links</div>
+        <div class="links-row">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=7YEVN3U2P9FS4">Donate to Development</a>
+          <a href="https://youtu.be/_IfHcD-m6uc">Quick Tutorial Video</a>
+          <a href="https://github.com/cpr2323/A8Manager">Github Repository</a>
+          <a href="https://github.com/cpr2323/A8Manager/issues">Github Issue List</a>
+          <a href="https://discord.gg/XWbttngfCw">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© Chris Roberts — Om Ohm Productions</span>
+      <a href="../index.html">All editors</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img src="" alt="" />
+  </div>
+  <script src="../js/site.js"></script>
+</body>
 </html>

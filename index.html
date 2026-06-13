@@ -1,93 +1,127 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <head>
-      <!-- other tags -->
-      <style>
-        .custom-bg {
-          background-color: #263238; /* replace with your preferred color */
-        }
-        .custom-text {
-          color: #8EBBD1; /* replace with your preferred color */
-        }
-        .outline-row {
-           border: 1px solid #5A7685; /* replace with your preferred color */
-        }
-        .green-text {
-          color: #139729
-        }
-        .notice-text {
-          color: #569787
-        }
-      </style>
-    </head>
-
-    <title>Om Ohm Productions - Chris Roberts</title>
-  </head>
-  <body class="custom-bg custom-text">
-    <div class="container">
-      <!-- Titles -->
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h3>Om Ohm Software</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-        </div>
-      </div>
-      <!-- Downaload links -->
-      <div class="row">
-        <div class="col-1">
-        </div>
-        <div class="col d-flex justify-content-center">
-          <h4><p class="green-text">A8Manager</p></h4>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <h4><p class="green-text">SquidManager</p></h4>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <h4><p class="green-text">ClutchEdit</p></h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-        </div>
-        <div class="col d-flex justify-content-center">
-          <a href="a8manager/index.html"><img src="a8manager/images/Assimil8or.jpg" class="img-fluid" alt="Assimilator Module" style="height: 200px;"></a>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <a href="squidmanager/index.html"><img src="squidmanager/images/SquidSalmple.jpg" class="img-fluid" alt="Squid Salmple Module" style="height: 200px;"></a>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <a href="clutchedit/index.html"><img src="clutchedit/images/Clutch.jpg" class="img-fluid" alt="Clutch Module" style="height: 200px;"></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-        </div>
-        <div class="col text-center">
-          <h5><a href="a8manager/index.html">Editor for Rossum Electro-Music Assimil8or</a></h5>
-        </div>
-        <div class="col text-center">
-          <h5><a href="squidmanager/index.html">Editor for ALM/Busy Circuits Squid Salmple</a></h5>
-        </div>
-        <div class="col text-center">
-          <h5><a href="clutchedit/index.html">Editor for WMD Clutch</a></h5>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Om Ohm Software — Editors for Eurorack Samplers</title>
+  <meta name="description" content="Open source, cross-platform preset and bank editors for Rossum Assimil8or, ALM Squid Salmple, and WMD Clutch." />
+  <meta name="theme-color" content="#101214" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap hdr">
+      <a class="logo" href="index.html" aria-label="Om Ohm home">
+        <span class="logo-badge"><img src="images/omohm-logo.png" alt="" class="logo-mark" /></span>
+        <span class="wm">OM <span class="amber">OHM</span></span>
+      </a>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="https://discord.gg/XWbttngfCw">Discord</a>
+        <a href="https://github.com/cpr2323">GitHub</a>
+      </nav>
+      <div class="hdr-cta">
+        <a class="btn btn-ghost" href="#products">Browse editors</a>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Editors for Eurorack samplers</div>
+          <h1>Manage your modules like you have a <span class="amber">studio assistant</span>.</h1>
+          <p class="lede">Om Ohm Software builds open source, cross-platform desktop editors for popular Eurorack sampler modules — drag-and-drop samples, tweak presets, and fix file-system headaches without fighting tiny screens.</p>
+          <div class="ctas">
+            <a class="btn btn-amber" href="#products">See all editors →</a>
+            <a class="btn btn-ghost" href="https://discord.gg/XWbttngfCw">Join Discord</a>
+          </div>
+          <p class="aud">For Assimil8or, Squid Salmple, and WMD Clutch owners on Windows and macOS.</p>
+        </div>
+        <a class="hero-shot" href="a8manager/images/a8manager_v2_6_2_win.jpg">
+          <img src="a8manager/images/a8manager_v2_6_2_win.jpg" alt="A8Manager screenshot" />
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="wrap">
+        <div class="eyebrow h2row">The editors</div>
+        <h2>Everything you need to <span class="amber">edit on desktop</span></h2>
+        <p class="sub">Each editor is purpose-built for its module — presets, banks, samples, and settings without the SD-card shuffle.</p>
+        <div class="grid cols-3">
+          <a class="card" href="a8manager/index.html">
+            <img class="thumb" src="a8manager/images/Assimil8or.jpg" alt="Assimil8or module" />
+            <h3><span class="dot"></span> A8Manager</h3>
+            <p>Preset editor for the Rossum Electro-Music Assimil8or — 8-channel sampling, MIDI setups, and full waveform editing.</p>
+          </a>
+          <a class="card" href="squidmanager/index.html">
+            <img class="thumb" src="squidmanager/images/SquidSalmple.jpg" alt="Squid Salmple module" />
+            <h3><span class="dot g"></span> SquidManager</h3>
+            <p>Bank editor for the ALM/Busy Circuits Squid Salmple — cue sets, loop tuning, and USB drive management.</p>
+          </a>
+          <a class="card" href="clutchedit/index.html">
+            <img class="thumb" src="clutchedit/images/Clutch.jpg" alt="WMD Clutch module" />
+            <h3><span class="dot b"></span> ClutchEdit</h3>
+            <p>Editor and sample manager for the WMD Clutch — drag-and-drop samples, audition, and non-destructive HIHAT.INI editing.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="eyebrow h2row">Why Om Ohm</div>
+        <h2>The module's missing <span class="amber">companion app</span></h2>
+        <p class="sub">Hardware samplers are incredible on stage and in the rack — but editing presets on a module screen is slow. These tools close that gap.</p>
+        <div class="grid cols-3">
+          <div class="card">
+            <h3><span class="dot"></span> Cross platform</h3>
+            <p>Native editors for Windows and macOS. Download, plug in your card or drive, and start editing.</p>
+          </div>
+          <div class="card">
+            <h3><span class="dot g"></span> Open source</h3>
+            <p>Source code on GitHub. Community feedback welcome — bugs get fixed, features get added.</p>
+          </div>
+          <div class="card">
+            <h3><span class="dot b"></span> Built for the workflow</h3>
+            <p>Drag-and-drop samples, waveform views, loop markers, file validation, and preset tools — not generic DAW plugins.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Pick your module, download the editor</h2>
+          <p>Free to use. Donations help keep development going.</p>
+          <a class="btn btn-amber" href="#products">Choose an editor →</a>
+        </div>
+        <p class="updated">Om Ohm Software by Chris Roberts</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© Chris Roberts — Om Ohm Productions</span>
+      <span>
+        <a href="https://discord.gg/XWbttngfCw">Discord</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/cpr2323">GitHub</a>
+      </span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img src="" alt="" />
+  </div>
+  <script src="js/site.js"></script>
+</body>
 </html>

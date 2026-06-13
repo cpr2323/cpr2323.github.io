@@ -1,151 +1,147 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <head>
-      <!-- other tags -->
-      <style>
-        .custom-bg {
-          background-color: #263238; /* replace with your preferred color */
-        }
-        .custom-text {
-          color: #8EBBD1; /* replace with your preferred color */
-        }
-        .outline-row {
-           border: 1px solid #5A7685; /* replace with your preferred color */
-        }
-        .green-text {
-          color: #139729
-        }
-        .red-text {
-          color: #97135c
-        }
-        .notice-text {
-          color: #569787
-        }
-      </style>
-    </head>
-
-    <title>Om Ohm Productions - Chris Roberts</title>
-  </head>
-  <body class="custom-bg custom-text">
-    <div class="container">
-      <!-- Titles -->
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h3>Squid Manager</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h6>Editor for ALM/Busy Circuits <a href="https://busycircuits.com/alm022/">Squid Salmple</a></h6>
-        </div>
-      </div>
-      <!-- Downaload links -->
-      <div class="row">
-        <div class="col text-right">
-          <a href="latest/windows/SquidManager_1_3_win.zip"><h5>Windows</h5></a>
-        </div>
-        <div class="col-auto text-center"><h5><p class="green-text"><- Download (<i>v1.3</i>) -></p></h5></div>
-        <div class="col text-left">
-          <a href="macos_download.html"><h5>macOS</h5></a>
-        </div>
-      </div>
-      <!-- Images -->
-      <div class="row">
-        <div class="col-5">
-          <a href="images/squidmanager_V1_3_win.jpg"><img src="images/squidmanager_V1_3_win.jpg" class="img-fluid" alt="Windows screenshot"></a>
-        </div>
-        <div class="col-2 d-flex align-items-center">
-          <div class="d-flex flex-column align-items-center">
-            <a href="https://www.paypal.com/donate/?hosted_button_id=9STYC4L2A28P2"><img src="images/btn_donate_LG.gif" class="img-fluid" alt="Donate Button"></a>
-            <p></p>
-            <p></p>
-            <img src="images/SquidSalmple.jpg" class="img-fluid mb-3" alt="Squid Salmple Module">
-            <a href="https://youtu.be/X3H9KiAY2HQ">Quick Overview Video</a>
-            <a href="https://discord.gg/XWbttngfCw">Discord Server</a>
-          </div>
-        </div>
-        <div class="col-5">
-          <a href="images/squidmanager_V1_3_macos.jpg"><img src="images/squidmanager_V1_3_macos.jpg" class="img-fluid" alt="macOS screenshot"></a>
-        </div>
-      </div>
-      <!-- Description  -->
-      <div class="row mt-3">
-        <div class="col">
-          <p>SquidManager is a Bank Editor for the ALM/Busy Circuits Squid Salmple, an 8 channel sampler for Eurorack.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-        </div>
-        <div class="col">
-          <ul>
-            <li>Open source and cross platform (Windows and OSX)</li>
-            <li>Edit Banks from USB Drive</li>
-            <li>Drag and drop samples</li>
-            <li>Drag and drop multiple samples on Cue Sets to concatanate and set a Cue Set for each</li>
-            <li>Audition raw samples to adjust loop points</li>
-            <li>Clone Parameters from one to channel to another</li>
-            <li>Loop end points align view</li>
-            <li>Full waveform view with loop point edit markers</li>
-            <li class="notice-text"><i>v1.3 - Updates for latest firmware and a bug fix</i></li>
-            <ul>
-              <li class="notice-text"><i>Updated to support new Pitch Shift parameter in the lastest firmware</i></li>
-              <li class="notice-text"><i>Fixed serious bug introduced in v1.2, where a value from a parameter text edit field would not actually update if you clicked away from that parameter</i></li>
-            </ul>
-
-            <li class="notice-text"><i>v1.2 - New features, improvments, and a bug fix</i></li>
-            <ul>
-              <li class="notice-text"><i>Auto convert audio files that are not wav files. (Drag and drop and File Chooser)</i></li>
-              <li class="notice-text"><i>Allow multifile drop to assign samples to multiple channels</i></li>
-              <li class="notice-text"><i>Added folder name to top of Popup Menus in File View</i></li>
-              <li class="notice-text"><i>Add Zero Crossing cue point align</i></li>
-              <li class="notice-text"><i>Add Chop (2-16 cue sets) to TOOLS menu</i></li>
-              <li class="notice-text"><i>Add 'zero' line into loop tuner</i></li>
-              <li class="notice-text"><i>Text is selected in a field when the field is first selected</i></li>
-              <li class="notice-text"><i>Add mousewheel support for scrolling numerical text editors and comboboxes</i></li>
-              <li class="notice-text"><i>Improved look of select Next/Previous CV Assign section arrow buttons</i></li>
-              <li class="notice-text"><i>Fixed Bank Tool tip when not showing all Banks (number referring to position in list, not preset number)</i></li>
-              <li class="notice-text"><i>Fixed bug with Bank List Component position jumping when using PopupMenu</i></li>
-              <li class="notice-text"><i>Fixed bug where right-click in Bank List would also select the row</i></li>
-              <li class="notice-text"><i>Fixed resize issue when adjusting the height below a certain point, causing layout issue</i></li>              
-            </ul>
-            <li class="notice-text"><i>v1.1 - New features, improvments, and a bug fix</i></li>
-            <ul>
-              <li class="notice-text"><i>Save Button highlighted as soon as soon as Bank Name is edited</i></li>
-              <li class="notice-text"><i>Copy/Paste/Delete Banks from the Bank List</i></li>
-              <li class="notice-text"><i>Clear Channel from the TOOLS menu</i></li>
-              <li class="notice-text"><i>Improved user feedback for drag and drop operations</i></li>
-              <li class="notice-text"><i>Drag and drop appending concatanation and set a Cue Set for each</i></li>
-              <li class="notice-text"><i>Fixed bug with importing Markers as Cue Sets</i></li>
-            </ul>
-          </li>
-          </ul>
-        </div>
-        <div class="col-1">
-        </div>
-      </div>
-      <!-- Other links  -->
-      <div class="row mt-3 outline-row">
-        <div class="col-3">
-          <a href="https://www.paypal.com/donate/?hosted_button_id=9STYC4L2A28P2">Donate to Development</a>
-        </div>
-        <div class="col">
-          <a href="https://github.com/cpr2323/SquidManager">Github Repository</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SquidManager — Editor for ALM Squid Salmple</title>
+  <meta name="description" content="SquidManager is a bank editor for the ALM/Busy Circuits Squid Salmple Eurorack sampler." />
+  <meta name="theme-color" content="#101214" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap hdr">
+      <a class="logo" href="../index.html" aria-label="Om Ohm home">
+        <span class="logo-badge"><img src="../images/omohm-logo.png" alt="" class="logo-mark" /></span>
+        <span class="wm">OM <span class="amber">OHM</span></span>
+      </a>
+      <nav>
+        <a href="../index.html#products">Products</a>
+        <a href="https://discord.gg/XWbttngfCw">Discord</a>
+        <a href="https://github.com/cpr2323/SquidManager">GitHub</a>
+      </nav>
+      <div class="hdr-cta">
+        <a class="btn btn-amber" href="latest/windows/SquidManager_1_3_win.zip">Download</a>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+  </header>
+
+  <main>
+    <section class="wrap product-hero">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / SquidManager</p>
+      <div class="eyebrow">Editor for Squid Salmple</div>
+      <h1>Squid<span class="amber">Manager</span></h1>
+      <p class="subtitle">Bank editor for the <a href="https://busycircuits.com/alm022/">ALM/Busy Circuits Squid Salmple</a> — an 8 channel sampler for Eurorack.</p>
+      <div class="download-bar">
+        <a class="btn btn-ghost" href="latest/windows/SquidManager_1_3_win.zip">Windows</a>
+        <span class="version">v1.3</span>
+        <a class="btn btn-ghost" href="macos_download.html">macOS</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap screenshots">
+        <a class="shot" href="images/squidmanager_V1_3_win.jpg">
+          <img src="images/squidmanager_V1_3_win.jpg" alt="SquidManager Windows screenshot" />
+        </a>
+        <div class="shot-center">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=9STYC4L2A28P2" class="btn btn-amber">Donate</a>
+          <img class="module-img" src="images/SquidSalmple.jpg" alt="Squid Salmple module" />
+          <a href="https://youtu.be/X3H9KiAY2HQ">Quick Overview Video</a>
+          <a href="https://discord.gg/XWbttngfCw">Discord Server</a>
+        </div>
+        <a class="shot" href="images/squidmanager_V1_3_macos.jpg">
+          <img src="images/squidmanager_V1_3_macos.jpg" alt="SquidManager macOS screenshot" />
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="eyebrow h2row">What's inside</div>
+        <h2>Bank editing from your <span class="amber">USB drive</span></h2>
+        <p class="sub">SquidManager is a Bank Editor for the ALM/Busy Circuits Squid Salmple, an 8 channel sampler for Eurorack.</p>
+        <ul class="feature-list">
+          <li>Open source and cross platform (Windows and macOS)</li>
+          <li>Edit Banks from USB Drive</li>
+          <li>Drag and drop samples</li>
+          <li>Drag and drop multiple samples on Cue Sets to concatenate and set a Cue Set for each</li>
+          <li>Audition raw samples to adjust loop points</li>
+          <li>Clone Parameters from one channel to another</li>
+          <li>Loop end points align view</li>
+          <li>Full waveform view with loop point edit markers</li>
+        </ul>
+
+        <details style="margin-top:28px">
+          <summary>Release history</summary>
+          <div class="inner">
+            <ul class="feature-list">
+              <li class="notice">v1.3 — Updates for latest firmware and a bug fix
+                <ul>
+                  <li class="notice">Updated to support new Pitch Shift parameter in the latest firmware</li>
+                  <li class="notice">Fixed serious bug introduced in v1.2, where a value from a parameter text edit field would not actually update if you clicked away from that parameter</li>
+                </ul>
+              </li>
+              <li class="notice">v1.2 — New features, improvements, and a bug fix
+                <ul>
+                  <li class="notice">Auto convert audio files that are not wav files (Drag and drop and File Chooser)</li>
+                  <li class="notice">Allow multifile drop to assign samples to multiple channels</li>
+                  <li class="notice">Added folder name to top of Popup Menus in File View</li>
+                  <li class="notice">Add Zero Crossing cue point align</li>
+                  <li class="notice">Add Chop (2-16 cue sets) to TOOLS menu</li>
+                  <li class="notice">Add 'zero' line into loop tuner</li>
+                  <li class="notice">Text is selected in a field when the field is first selected</li>
+                  <li class="notice">Add mousewheel support for scrolling numerical text editors and comboboxes</li>
+                  <li class="notice">Improved look of select Next/Previous CV Assign section arrow buttons</li>
+                  <li class="notice">Fixed Bank Tool tip when not showing all Banks</li>
+                  <li class="notice">Fixed bug with Bank List Component position jumping when using PopupMenu</li>
+                  <li class="notice">Fixed bug where right-click in Bank List would also select the row</li>
+                  <li class="notice">Fixed resize issue when adjusting the height below a certain point</li>
+                </ul>
+              </li>
+              <li class="notice">v1.1 — New features, improvements, and a bug fix
+                <ul>
+                  <li class="notice">Save Button highlighted as soon as Bank Name is edited</li>
+                  <li class="notice">Copy/Paste/Delete Banks from the Bank List</li>
+                  <li class="notice">Clear Channel from the TOOLS menu</li>
+                  <li class="notice">Improved user feedback for drag and drop operations</li>
+                  <li class="notice">Drag and drop appending concatenation and set a Cue Set for each</li>
+                  <li class="notice">Fixed bug with importing Markers as Cue Sets</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="eyebrow h2row">Links</div>
+        <div class="links-row">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=9STYC4L2A28P2">Donate to Development</a>
+          <a href="https://github.com/cpr2323/SquidManager">Github Repository</a>
+          <a href="https://youtu.be/X3H9KiAY2HQ">Overview Video</a>
+          <a href="https://discord.gg/XWbttngfCw">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© Chris Roberts — Om Ohm Productions</span>
+      <a href="../index.html">All editors</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img src="" alt="" />
+  </div>
+  <script src="../js/site.js"></script>
+</body>
 </html>
