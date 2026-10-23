@@ -24,7 +24,7 @@
         <a href="https://github.com/cpr2323/A8Manager">GitHub</a>
       </nav>
       <div class="hdr-cta">
-        <a class="btn btn-amber" href="latest/windows/A8Manager_2_6_2_win.zip">Download</a>
+        <a class="btn btn-amber" href="latest/windows/A8Manager_2_7_win.zip">Download</a>
       </div>
     </div>
   </header>
@@ -36,25 +36,26 @@
       <h1>A8<span class="amber">Manager</span></h1>
       <p class="subtitle">Preset editor for the <a href="https://www.rossum-electro.com/products/assimil8or/">Rossum Electro-Music Assimil8or</a> — an 8 channel sampler for Eurorack.</p>
       <div class="download-bar">
-        <a class="btn btn-ghost" href="latest/windows/A8Manager_2_6_2_win.zip">Windows</a>
-        <span class="version">v2.6.2</span>
+        <a class="btn btn-ghost" href="latest/windows/A8Manager_2_7_win.zip">Windows</a>
+        <span class="version">v2.7</span>
         <a class="btn btn-ghost" href="macos_download.html">macOS</a>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap screenshots">
-        <a class="shot" href="images/a8manager_v2_6_2_win.jpg">
-          <img src="images/a8manager_v2_6_2_win.jpg" alt="A8Manager Windows screenshot" />
+        <a class="shot" href="images/a8manager_v2_7_win.jpg">
+          <img src="images/a8manager_v2_7_win.jpg" alt="A8Manager Windows screenshot" />
         </a>
         <div class="shot-center">
           <a href="https://www.paypal.com/donate/?hosted_button_id=7YEVN3U2P9FS4" class="btn btn-amber">Donate</a>
           <img class="module-img" src="images/Assimil8or.jpg" alt="Assimil8or module" />
+          <a href="https://youtu.be/Osgd9R67FNU">2.7 Release Video</a>
           <a href="https://youtu.be/_IfHcD-m6uc">Quick Overview Video</a>
           <a href="https://discord.gg/XWbttngfCw">Discord Server</a>
         </div>
-        <a class="shot" href="images/a8manager_v2_6_2_macos.jpg">
-          <img src="images/a8manager_v2_6_2_macos.jpg" alt="A8Manager macOS screenshot" />
+        <a class="shot" href="images/a8manager_v2_7_macos.jpg">
+          <img src="images/a8manager_v2_7_macos.jpg" alt="A8Manager macOS screenshot" />
         </a>
       </div>
     </section>
@@ -76,6 +77,29 @@
           <summary>Release history</summary>
           <div class="inner">
             <ul class="feature-list">
+              <li class="notice">v2.7 — New look, improved waveform/audition workflow, and bug fixes
+                <ul>
+                  <li class="notice">New visual style, shared with SquidManager and ClutchEdit</li>
+                  <li class="notice">Improved waveform viewer
+                    <ul>
+                      <li class="notice">Can be zoomed and panned</li>
+                      <li class="notice">Can be enlarged</li>
+                      <li class="notice">Sample and Loop markers are color coded</li>
+                      <li class="notice">Now shows a playhead</li>
+                      <li class="notice">New context menu for moving around the waveform, zooming to marker boundaries, and moving markers</li>
+                    </ul>
+                  </li>
+                  <li class="notice">Auditioning now matches how the module itself plays back, including play mode, loop mode, and sample/loop points; renamed the ONCE/LOOP buttons to TRIGGER/LATCH</li>
+                  <li class="notice">Stereo-linked channels now have linked tabs</li>
+                  <li class="notice">On Stereo/Right channels it's now obvious that MODE can be changed, and PAN can now be changed too</li>
+                  <li class="notice">Fixed several stereo pair bugs, including assigning a new or mono sample to a stereo pair</li>
+                  <li class="notice">New Match Opposite Boundary feature, and reorganized the zero-crossing menu</li>
+                  <li class="notice">CV Input combo box now matches the module's labels ("CV A/B/C" instead of "0A/0B/0C")</li>
+                  <li class="notice">Ctrl + drag for changing values works better</li>
+                  <li class="notice">Switched to the MIT License and added attribution for bundled fonts</li>
+                  <li class="notice">Build system: moved to CMake (shared setup with SquidManager and ClutchEdit), updated JUCE to 9.0.1 (now a submodule, fixing a WAV-reading bug), moved shared utility code into oolib, moved to C++20, and added a regression test suite</li>
+                </ul>
+              </li>
               <li class="notice">v2.6.2 — Fixed a bug in reading Presets which were created by third party apps which did not exactly match the format the module creates</li>
               <li class="notice">v2.6.1 — Updated for Assimil8or FW 3.03 and fixed a serious bug
                 <ul>
