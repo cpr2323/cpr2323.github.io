@@ -24,7 +24,7 @@
         <a href="https://github.com/cpr2323/A8Manager">GitHub</a>
       </nav>
       <div class="hdr-cta">
-        <a class="btn btn-amber" href="latest/windows/A8Manager_2_7_win.zip">Download</a>
+        <a class="btn btn-amber" href="latest/windows/A8Manager_2_7_1_win.zip">Download</a>
       </div>
     </div>
   </header>
@@ -36,16 +36,16 @@
       <h1>A8<span class="amber">Manager</span></h1>
       <p class="subtitle">Preset editor for the <a href="https://www.rossum-electro.com/products/assimil8or/">Rossum Electro-Music Assimil8or</a> — an 8 channel sampler for Eurorack.</p>
       <div class="download-bar">
-        <a class="btn btn-ghost" href="latest/windows/A8Manager_2_7_win.zip">Windows</a>
-        <span class="version">v2.7</span>
+        <a class="btn btn-ghost" href="latest/windows/A8Manager_2_7_1_win.zip">Windows</a>
+        <span class="version">v2.7.1</span>
         <a class="btn btn-ghost" href="macos_download.html">macOS</a>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap screenshots">
-        <a class="shot" href="images/a8manager_v2_7_win.jpg">
-          <img src="images/a8manager_v2_7_win.jpg" alt="A8Manager Windows screenshot" />
+        <a class="shot" href="images/a8manager_v2_7_1_win.jpg">
+          <img src="images/a8manager_v2_7_1_win.jpg" alt="A8Manager Windows screenshot" />
         </a>
         <div class="shot-center">
           <a href="https://www.paypal.com/donate/?hosted_button_id=7YEVN3U2P9FS4" class="btn btn-amber">Donate</a>
@@ -53,9 +53,10 @@
           <a href="https://youtu.be/Osgd9R67FNU">2.7 Release Video</a>
           <a href="https://youtu.be/_IfHcD-m6uc">Quick Overview Video</a>
           <a href="https://discord.gg/XWbttngfCw">Discord Server</a>
+          <a href="macos_2_6_3_download.html">Older Mac? Get 2.6.3</a>
         </div>
-        <a class="shot" href="images/a8manager_v2_7_macos.jpg">
-          <img src="images/a8manager_v2_7_macos.jpg" alt="A8Manager macOS screenshot" />
+        <a class="shot" href="images/a8manager_v2_7_1_macos.jpg">
+          <img src="images/a8manager_v2_7_1_macos.jpg" alt="A8Manager macOS screenshot" />
         </a>
       </div>
     </section>
@@ -77,6 +78,16 @@
           <summary>Release history</summary>
           <div class="inner">
             <ul class="feature-list">
+              <li class="notice">v2.7.1 — New hotkeys and safer sample handling
+                <ul>
+                  <li class="notice">New hotkeys: Ctrl/Cmd + 1–8 selects a channel, Alt/Option + 1–8 selects a zone on the current channel, Space plays the zone while held (TRIGGER), Shift + Space toggles LATCH — these also work while a text field has focus</li>
+                  <li class="notice">New waveform right-click menu items: Set Loop To Sample and Set Sample To Loop</li>
+                  <li class="notice">Dropping samples onto a preset can no longer delete or truncate the original files; files outside the preset folder are never changed, and existing files with the same name are never overwritten; if a sample can't be prepared, nothing changes and an alert explains why</li>
+                  <li class="notice">Deleting files, presets, and Validator conversions now moves them to the Trash/Recycle Bin instead of deleting them permanently</li>
+                  <li class="notice">Fixed bug where, with Loop Length shown as Loop End and no length set, dragging the loop start could push the loop end past the end of the sample</li>
+                  <li class="notice">Requires macOS 11 (Big Sur) or later — for older Macs, use <a href="macos_2_6_3_download.html">2.6.3</a></li>
+                </ul>
+              </li>
               <li class="notice">v2.7 — New look, improved waveform/audition workflow, and bug fixes
                 <ul>
                   <li class="notice">New visual style, shared with SquidManager and ClutchEdit</li>
@@ -98,6 +109,13 @@
                   <li class="notice">Ctrl + drag for changing values works better</li>
                   <li class="notice">Switched to the MIT License and added attribution for bundled fonts</li>
                   <li class="notice">Build system: moved to CMake (shared setup with SquidManager and ClutchEdit), updated JUCE to 9.0.1 (now a submodule, fixing a WAV-reading bug), moved shared utility code into oolib, moved to C++20, and added a regression test suite</li>
+                </ul>
+              </li>
+              <li class="notice">v2.6.3 — For older Macs; runs on macOS 10.13 (High Sierra) and later — <a href="macos_2_6_3_download.html">download</a>
+                <ul>
+                  <li class="notice">Includes all bug fixes and new features through 2.7.1, except the new UI and new waveform viewer</li>
+                  <li class="notice">Some of the 2.7/2.7.1 waveform features are included in the original waveform view: a playhead showing audition playback position; Ctrl/Cmd + drag moves a marker and its partner together (sample start/end or loop start/end); and a right-click menu with Zero Crossing Nudge, Match Opposite Boundary, Set Loop To Sample, Set Sample To Loop, and Set Marker Here for each marker</li>
+                  <li class="notice">Zooming, panning, the enlarged view, and color-coded markers are only in 2.7.1 — if your Mac runs macOS 11 (Big Sur) or later, 2.7.1 is recommended</li>
                 </ul>
               </li>
               <li class="notice">v2.6.2 — Fixed a bug in reading Presets which were created by third party apps which did not exactly match the format the module creates</li>
